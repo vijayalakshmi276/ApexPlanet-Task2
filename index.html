@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form & To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Responsive Contact Form & To-Do List</h2>
+  <div class="container">
+
+    <!-- Contact Form -->
+    <div class="form-container">
+      <h3>Contact Us</h3>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Enter your message" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- To-Do List -->
+    <div class="todo-container">
+      <h3>To-Do List</h3>
+      <div class="todo-input">
+        <input type="text" id="todoInput" placeholder="Add a new task">
+        <button id="addTaskBtn">Add</button>
+      </div>
+      <ul class="todo-list" id="todoList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
